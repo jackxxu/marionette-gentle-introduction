@@ -1,23 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang='en'>
   <head>
-    <meta charset="utf-8">
+    <meta charset='utf-8'>
     <title>Marionette Contact Manager</title>
-    <link href="./assets/css/bootstrap.css" rel="stylesheet">
-    <link href="./assets/css/application.css" rel="stylesheet">
-    <link href="./assets/css/jquery-ui-1.10.0.custom.css" rel="stylesheet">
+    <link href='./assets/css/bootstrap.css' rel='stylesheet'>
+    <link href='./assets/css/application.css' rel='stylesheet'>
+    <link href='./assets/css/jquery-ui-1.10.0.custom.css' rel='stylesheet'>
   </head>
 
   <body>
 
-    <div id="header-region"></div>
+    <!-- regions -->
+    <div id='header-region'></div>
 
-    <div id="main-region" class="container">
+    <div id='main-region' class='container'>
       <p>Here is static content in the web page. You'll notice that it gets replaced by our app as soon as we start it.</p>
     </div>
 
     <div id="dialog-region"></div>
 
+    <!-- templates -->
     <script type="text/template" id="header-template">
       <div class="navbar-inner">
         <div class="container">
@@ -30,6 +32,7 @@
     </script>
 
     <script type="text/template" id="header-link">
+
       <a href="#<%= url %>"><%= name %></a>
     </script>
 
@@ -46,6 +49,7 @@
     </script>
 
     <script type="text/template" id="contact-list-none">
+
       <td colspan="3">No contacts to display.</td>
     </script>
 
@@ -69,7 +73,8 @@
     </script>
 
     <script type="text/template" id="missing-contact-view">
-      <div class="alert alert-error">This contact doesn't exist !</div>
+
+      <div class="alert alert-error">This contact does not exist !</div>
     </script>
 
     <script type="text/template" id="contact-view">
@@ -126,6 +131,7 @@
       <p>Hopefully, it has served you well !</p>
     </script>
 
+    <!-- standard libs -->
     <script src="./assets/js/vendor/jquery.js"></script>
     <script src="./assets/js/vendor/jquery-ui-1.10.3.js"></script>
     <script src="./assets/js/vendor/json2.js"></script>
@@ -138,6 +144,7 @@
     <script src="./assets/js/vendor/spin.js"></script>
     <script src="./assets/js/vendor/spin.jquery.js"></script>
 
+    <!-- commons -->
     <script src="./assets/js/apps/config/marionette/regions/dialog.js"></script>
     <script src="./assets/js/app.js"></script>
     <script src="./assets/js/apps/config/storage/localstorage.js"></script>
@@ -146,6 +153,7 @@
     <script src="./assets/js/entities/contact.js"></script>
     <script src="./assets/js/common/views.js"></script>
 
+    <!-- contact app -->
     <script src="./assets/js/apps/contacts/contacts_app.js"></script>
     <script src="./assets/js/apps/contacts/common/views.js"></script>
     <script src="./assets/js/apps/contacts/list/list_view.js"></script>
@@ -156,10 +164,12 @@
     <script src="./assets/js/apps/contacts/edit/edit_controller.js"></script>
     <script src="./assets/js/apps/contacts/new/new_view.js"></script>
 
+    <!-- about app -->
     <script src="./assets/js/apps/about/about_app.js"></script>
     <script src="./assets/js/apps/about/show/show_view.js"></script>
     <script src="./assets/js/apps/about/show/show_controller.js"></script>
 
+    <!-- header app -->
     <script src="./assets/js/apps/header/header_app.js"></script>
     <script src="./assets/js/apps/header/list/list_view.js"></script>
     <script src="./assets/js/apps/header/list/list_controller.js"></script>
